@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<title>Games</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/plainStyle.css"/>
+
+	<script src="assets/js/games.js" async></script>
+
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+	<h1>Games!</h1>
+
+	<nav id="navlist">
+		<a href="index.html">Return</a>
+	</nav>
+
+	<div>
+
+		<h2>Check the Link below Out!</h2>
+
+		<p>The link has several different games that are created using either Javascript or HTML5 or both, meaning you don't have to download any software!</p>
+		<a href="https://www.digitaltrends.com/gaming/best-html-5-javascript-games/">15 Awesome HTML5 and Javascript games we've played on the Web</a>
+
+	</div>
+
+	<div>
+
+		<h2>Guess a Number!</h2><br/>
+
+		<form>
+
+			<label>Number between 0-100</label><br/><br/>
+			<input type="text" name="guessedNumber" onKeyDown="if(event.keyCode == 13){  document.getElementById('button1').click(); event.preventDefault();}"><br/><br/>
+			<button type="button" onClick="checkNumber()" id="button1">Enter</button>
+
+			<p id=answer></p>
+
+		</form>
+
+	</div>
+
+	<footer>Copyright &#169; 2020 Rachel Taylor</footer>
+
+</body>
+</html>

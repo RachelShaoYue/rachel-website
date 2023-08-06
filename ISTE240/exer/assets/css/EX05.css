@@ -1,0 +1,16 @@
+/* Stylesheet for the fifth exercise - JavaScript Part 2 */
+
+body{
+	font-family: Arial;
+	padding: 0;
+	margin: 1em;
+}
+
+.exerTitle{
+	font-weight: bold;
+	font-size: large;
+}
+
+div{
+	margin: 1em 0;
+}

@@ -1,0 +1,175 @@
+/* style for the homepage */
+
+body{
+	font-family: "Arial";
+	color: #564D4A;
+	margin: 0;
+	padding: 0;
+	background-color: lightgray;
+}
+
+#details{
+	background-color: #BA1B1D;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 0;
+	margin-bottom: 1em;
+	padding: .5em 0;
+}
+
+.aboutMe{
+	display: flex;
+}
+
+.aboutMe img{
+	width: 40%;
+}
+
+.aboutMe p{
+	padding: 0;
+	margin: 0;
+	margin-right: .5em;
+}
+
+#content{
+	margin: 1em 10em;
+	padding: 1em;
+	background-color: white;
+}
+
+footer{
+	background-color: black;
+	padding: 5em;
+	text-align: center;
+	color: white;
+}
+
+h1{
+	background-color: #BA1B1D;
+	color: white;
+	margin: 0;
+	padding: 2em;
+	text-align: center;
+}
+
+h2{
+	color: white;
+	background-color: black;
+	padding: .5em;
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 1em;
+}
+
+h3{
+	background-color: #BA1B1D;
+	color: white;
+	margin: 0;
+	text-align: center;
+	padding: .5em;
+}
+
+#first{
+	margin: 0;
+}
+
+.assignments{
+	background-color: #5B2333;
+	color: white;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.assignments a{
+	display: inline-block;
+	width: 100%;
+}
+
+.assignments a:hover{
+	color: #BA1B1D;
+}
+
+
+.assignments li{
+	list-style: none;
+	text-align: center;
+	padding: .5em;
+	margin: auto;
+}
+
+.showLinks ul{
+	display: none;
+}
+
+#projectsLinks{
+	display: none;
+}
+
+/* for tablet */
+@media only screen and (max-width: 1024px){
+
+	#content{
+		margin: 1em 5em;
+	}
+
+	.aboutMe{
+		flex-direction: column-reverse;
+		gap: 1em;
+	}
+
+	.aboutMe img{
+		width: 100%;
+	}
+
+}
+
+/* for smartphone and tablet */
+@media only screen and (max-width: 850px){
+
+	#content{
+		margin: 1em;
+	}
+
+	#details{
+		padding: 1em;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#details li{
+		list-style: none;
+		text-align: center;
+		padding: .5em;
+		margin: auto;
+	}
+}
+
+/* for smartphone */
+@media only screen and (max-width: 400px){
+
+	h1{
+		padding: 3em 0;
+	}
+
+	h2{
+		padding: 2em;
+	}
+
+	.assignments li{
+		padding: 2em;
+	}
+
+	#content{
+		margin: 0;
+	}
+}

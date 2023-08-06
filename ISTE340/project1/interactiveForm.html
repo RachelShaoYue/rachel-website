@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="assets/css/generalStyle.css" />
+    <meta charset="utf-8" />
+    <title>Adopt a Pet</title>
+    <script type="text/javascript" src="assets/js/generalScript.js"></script>
+    <script type="text/javascript" src="assets/js/cookies.js"></script>
+  </head>
+  <body onload="APP.construct(formData['pet']); APP.processYourData(); APP.checkCompatibleBrowser();">
+    <div id="container">
+      <div id="formDiv">
+        <h1>Find and Adopt a Pet!</h1>
+        <form id="interactiveForm"></form>
+        <button onclick="APP.clearQuestions(null, formData['pet']['assets'][0]);">Start Over</button>
+      </div>
+      <div id="resultDiv">
+        <div id="messageDiv">
+          <p>See the picture below of your future best friend!</p>
+        </div>
+        <img id="resultImg" />
+      </div>
+      <div id="historyDiv">
+        <h2>Previous Results</h2>
+        <ul></ul>
+      </div>
+    </div>
+  </body>
+</html>

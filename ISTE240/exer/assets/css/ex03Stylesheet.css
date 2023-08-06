@@ -1,0 +1,114 @@
+/***** Stylesheet for Exercise 3 
+ * Date: 9/16/2021 *****/
+
+body{
+	background-color: #EEEEEE;
+	text-align: center;
+	color: #2374E7;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+form{
+	margin-bottom: 1em;
+}
+
+fieldset{
+	text-align: left;
+	width: max-content;
+	margin: auto;
+	background-color: #DAE4E5;
+}
+
+legend{
+	color: black;
+}
+
+input[type=submit] {
+	color: white;
+    background-color:#2374E7; 
+    border:0 none;
+    padding: .5em 1em;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: lightgray;
+	font-size: 20px;
+	padding-right: .5em;
+}
+
+img{
+	height: 83px;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	display: inline-block;
+	width: 100px;
+	text-decoration: none;
+	color: #2374E7;
+	padding: 30px 0;
+}
+
+a:hover{
+	color: gray;
+}
+
+datalist{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+datalist option{
+	width: 20px;
+}
+
+input[type="range"]{
+	width: 235px;
+}
+
+/* for smartphone and tablet */
+@media only screen and (max-width: 850px){
+	nav{
+		flex-direction: column;
+		padding: 0;
+	}
+
+	img{
+		width: 100%;
+		height: inherit;
+	}
+
+	ul{
+		flex-direction: column;
+	}
+
+	li{
+		width: 100%;
+	}
+
+	a{
+		display: block;
+		padding: 1em 0;
+		width: 100%;
+	}
+}

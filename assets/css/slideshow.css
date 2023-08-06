@@ -1,0 +1,167 @@
+/* stylesheet for petSlideshow.html */
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.mySlides img{
+  padding: 0em 15em;
+}
+
+h1{
+	text-align: center; 
+	background-color: #1a66ff;
+	color: white;
+	margin: 0em;
+	padding: .5em;
+}
+
+#navlist{
+	padding: 0em 1em;
+	background-color: #1a66ff;
+	position: sticky;
+	width: 100%;
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+a{
+	padding: 1em;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+a:hover{
+	color: lightgray;
+}
+
+footer{
+  background-color: black;
+  text-align: center;
+  padding: 10em;
+  font-size: 80%;
+  color: white;
+  border-top: 2px solid white;
+}
+
+#current, #current:hover{
+	font-weight: bold;
+	color: white;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  background-color: lightgray;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(26, 102, 255, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #1a66ff;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* for tablet */
+@media only screen and (max-width: 1024px){
+
+  .mySlides img{
+    padding: 0em;
+  }
+
+}
+
+/* for smartphone */
+@media only screen and (max-width: 850px){
+
+  #navlist{
+    flex-direction: column;
+    padding: 0em;
+  }
+
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>My Pets</title>
+
+	<link rel="stylesheet" type="text/css" href="../assets/css/imageDescriptions.css"/>
+
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+
+<body>
+
+	<div id="whole-nav">
+		<div id="navbar">
+			<h2>My Pets</h2>
+
+			<div id="desktop-navlist">
+				<a href="#dogs">Dogs</a>
+				<a href="#cats">Cats</a>
+				<a href="#foreverMissed">Forever Missed</a>
+				<a href="#bunnies">Rabbits</a>
+				<a href="#hens">Hens</a>
+				<a href="dogsSlideshow.html">Slideshows</a>
+			</div>
+
+			<div id="icon" onclick="showList()">
+				<div id="top-bar"></div>
+				<div id="middle-bar"></div>
+				<div id="bottom-bar"></div>
+			</div>
+		</div>
+
+		<div id="mobile-navlist">
+			<a href="#dogs">Dogs</a>
+			<a href="#cats">Cats</a>
+			<a href="#foreverMissed">Forever Missed</a>
+			<a href="#bunnies">Rabbits</a>
+			<a href="#hens">Hens</a>
+			<a href="dogsSlideshow.html">Slideshows</a>
+		</div>
+
+		<script>
+			function showList(){
+				var list = document.getElementById("mobile-navlist");
+				style = window.getComputedStyle(list);
+				display = style.getPropertyValue('display');
+
+  				if (display == "none") {
+    				list.style.display = "flex";
+    				document.getElementById("top-bar").style.display = "none";
+    				document.getElementById("bottom-bar").style.display = "none";
+    				document.getElementById("icon").style.justifyContent = "space-around";
+  				} else if(display == "flex"){
+    				list.style.display = "none";
+    				document.getElementById("top-bar").style.display = "block";
+    				document.getElementById("bottom-bar").style.display = "block";
+    				document.getElementById("icon").style.justifyContent = "space-between";
+  				}
+			}
+
+			window.onresize = function(){
+				if(window.innerWidth >= 850){
+					document.getElementById("mobile-navlist").style.display = "none";
+				}else{
+					var list = document.getElementById("mobile-navlist");
+					listStyle = window.getComputedStyle(list);
+					listDisplay = listStyle.getPropertyValue('display');
+
+					var bar = document.getElementById("top-bar");
+					barStyle = window.getComputedStyle(bar);
+					barDisplay = barStyle.getPropertyValue('display');
+					if(barDisplay == "none" && listDisplay == "none"){
+						document.getElementById("top-bar").style.display = "block";
+	    				document.getElementById("bottom-bar").style.display = "block";
+	    				document.getElementById("icon").style.justifyContent = "space-between";
+					}
+				}
+			}
+		</script>
+
+	</div>
+
+	</div>
+
+	<div id="pets">
+		<div class="parallax" id="dogs">
+			<div class="header-background">
+				<div class="header" id="dogs-header">Dogs</div>
+			</div>
+		</div>
+
+		<div class="pet-desc" id="cooper">
+			<div id="cooper-container">
+				<img src="../assets/media/cooper.jpg" alt="image of Cooper"/>
+				<div id="cooper-overlap">
+					<div class="name">Cooper<br><br><small>5/20/2019</small></div>
+				</div>
+			</div>
+			<p>Cooper was six years old when he was adopted in March 2019. My mom first met him at a rehabilitation place for elderly people where she visited her parents. She noticed that the dog was pretty intimidated around people, and then she found out that the place was planning to move Cooper to a shelter for dogs since the dog wasn't adapting to new faces and changes well. Without her ability to resist adopting the poor jumpy dog, she decided to bring him to our home. Eventually, the dog became quite comfortable with my family. He loves belly rubs, and he wants a lot of petting. He has become our watchdog of the house, and Ripley and Fiona will have Cooper's back when Cooper barks at something outside.</p>
+		</div>
+
+		<div class="pet-desc" id="fiona-reverse">
+			<div id="fiona-container">
+				<img src="../assets/media/fiona.jpg" alt="image of Fiona"/>
+				<div id="fiona-overlap">
+					<div class="name">Fiona<br><br><small>10/25/2016</small></div>
+				</div>
+			</div>
+			<p>This is a French Bulldog named Fiona. One of the fun facts about her is that she has two names, Fiona and Maggie. The girls in my family like "Fiona" because the dog reminds us of Fiona from Shrek. The boys, on the other hand, like "Maggie" for no reason. The dog is responsive to both of the names anyways. She was adopted a week before Thanksgiving in 2019. My dad heard from his friend that there was a breeder who was selling french bulldogs in Texas. After informing my mom about the exciting news, she agreed to go there with him to adopt the silver french bulldog. When I returned home from my college for the Thanksgiving break, I was thrilled to see an adorably bulky dog. She was really sweet with people and loves to sit on the lap.</p>
+		</div>
+
+		<div class="pet-desc" id="ripley">
+			<div id="ripley-container">
+				<img src="../assets/media/ripley.jpg" alt="image of Ripley"/>
+				<div id="ripley-overlap">
+					<div class="name">Ripley<br><br><small>9/29/2018</small></div>
+				</div>
+			</div>
+			<p>This playful Wheaten Terrier dog was brought into the family in December 2018 when she was only a fluffy puppy with dark brown fur and creamy white at the root of her coat. My mom heard about a breeder who was selling Wheaten Terrier puppies from her friend at work. Later, she and my sister went to that person to adopt this dog. My mom named her Ripley; the name was inspired by Ripley's Believe It or Not! She was such an energetic puppy that always had us alerted for whatever surprises she gave us. She required a lot of training to turn into a mature and well-behaved dog. She is still mischievous at times as she is our youngest dog that loves to play with both people and dogs. She often wants to get Fiona or Cooper to play with her, but sometimes the other dogs get annoyed. She is the dog with the highest energy.</p>
+		</div>
+
+		<div class="parallax" id="cats">
+			<div class="header-background">
+				<div class="header" id="cats-header">Cats</div>
+			</div>
+		</div>
+
+		<div class="pet-desc" id="raven-reverse">
+			<div id="raven-container">
+				<img src="../assets/media/raven.jpg" alt="image of Ripley"/>
+				<div id="raven-overlap">
+					<div class="name">Raven<br><br><small>7/1/2014</small></div>
+				</div>
+			</div>
+			<p>This is Raven that became one of our family members after we had concluded that Tibah needed a cat friend in fall in 2014. At the shelter, she was well known for her lively and delightful traits which had made us adopt her. She was a really tiny kitten that loved cuddling in our hands. When we first welcomed her to the house, she kept wanting our attention a lot. She got jealous easily when we gave Asia attention in front of her; she would jump in the front of Asia to get us to pet her instead of the dog. After Asia passed away, she has become really affectionate with my sister. She also loves making noises and playing with Winter and Tibah at night.</p>
+		</div>
+
+		<div class="pet-desc" id="tibah">
+			<div id="tibah-container">
+				<img src="../assets/media/tibah.jpg" alt="image of Tibah"/>
+				<div id="tibah-overlap">
+					<div class="name">Tibah<br><br><small>6/1/2014</small></div>
+				</div>
+			</div>
+			<p>My mom named her Tibah because the name means gray in Indian which matches her shiny coat. My sister learned that her friend's mother was trying to find a home for this cat and other kittens in spring 2014. My sister had been begging my mom to get a kitten, and my mom gave in to adopting one once she learned that there was a kitten whose coat is gray which is her weakness. She was shy and quiet when she came home for the first time. As time passed by, she became fond of petting. When she was young, she loved to curl up in the sinker in our bathroom as she liked drinking water from the sinker. She still loves the tap water today.</p>
+		</div>
+
+		<div class="pet-desc" id="winter-reverse">
+			<div id="winter-container">
+				<img src="../assets/media/winter.jpg" alt="image of Winter"/>
+				<div id="winter-overlap">
+					<div class="name">Winter<br><br><small>12/24/2014</small></div>
+				</div>
+			</div>
+			<p>With the snow looking coat, we decided to name this cat Winter, and she was unexpectedly adopted. When we planned to adopt Raven alone, Winter grabbed my sister through the cage, begging her to adopt her as well. When she was moved to a different environment, she was easily frightened; she went into hiding under a bed or couch whenever a person was entering the room. As we kept showing our love to her, she eventually became a spoiled cat that likes petting and getting attention a lot. The cat is also a funny weirdo. She is quite clumsy; she can't walk on the top of a couch as well as the other cats. She sometimes crashes into people or things. We love her dearly despite her gawkish traits.</p>
+		</div>
+
+		<div class="parallax" id="foreverMissed">
+			<div class="header-background">
+				<div class="header" id="pets-header">Forever Missed</div>
+			</div>
+		</div>
+
+		<div class="pet-desc" id="asia">
+			<div id="asia-container">
+				<img src="../assets/media/asia.jpg" alt="image of Asia"/>
+				<div id="asia-overlap">
+					<div class="name">Asia<br><br><small>6/24/2004-8/15/2018</small></div>
+				</div>
+			</div>
+			<p>We adopted this dog, Asia, when she was only a few weeks old. This dog was breed mixed, Shar Pei and Labrador Retriever. She was such a sweetie who was also fiercely protecting the house and family. Although she was sometimes aggressive towards other dogs and unfamiliar faces, she would and had never bitten them. Once we assured her that a new stranger she met wasn't a threat, she would be friendly towards that person. She was intelligent and protective of us. However, she could be jealous and grumpy sometimes if we gave our attention to the other pets, both cats and dogs equally. She loved playing with or without toys with us, humans only. She also got excited when we take her on a trip or vacation.</p>
+		</div>
+
+		<div class="pet-desc" id="gandalf-reverse">
+			<div id="gandalf-container">
+				<img src="../assets/media/gandalf.jpg" alt="image of Gandalf"/>
+				<div id="gandalf-overlap">
+					<div class="name">Gandalf<br><br><small>2004-2013</small></div>
+				</div>
+			</div>
+			<p>In 2004, my dad spotted several kittens being given away for free in a parking lot at a Walmart, and then he called my mom, asking her what she would think of him adopting a kitten. My mom was agreed to welcome a new family member, but she wanted a male one since she had heard that many male cats tend to be friendlier than female cats. My dad then adopted this cat. The cat was named Gandalf, and the name came from the Lord of Rings. He liked being petted, but he could be aloof and wanted to be left alone sometimes. Gandalf also was mean to my sister when she was younger; he kept on preying, sneaking, and biting her. However, he was chilling and pleasant most of the time.</p>
+		</div>
+
+		<div class="pet-desc" id="finley">
+			<div id="finley-container">
+				<img src="../assets/media/finley.jpg" alt="image of Finely"/>
+				<div id="finley-overlap">
+					<div class="name">Finley<br><br><small>2012-2017</small></div>
+				</div>
+			</div>
+			<p>Finley was a Manx cat, and her breed is well known for its having no tail. 20% of Manx cats have Manx Syndrome which causes them to have "a short spine, urinary tract problems, and difficulties with bowels and digestion" (<a href="https://www.purina.com/cats/cat-breeds/manx" id="footer" target="_blank">https://www.purina.com/cats/cat-breeds/manx</a>). She was in that small population, but she was so affectionate and playful. My sister found on a website that there was a Manx cat that needed a home, so she got my parents to go to the shelter where this cat was. Then, they adopted her when she was five years old in February 2016. This cat was like a dog because she intensely loved to be carried and cuddle with us. Unfortunately, we only had her for a few months before her poorly developed body gave out.</p>
+		</div>
+
+		<div class="pet-desc" id="taz-reverse">
+			<div id="taz-container">
+				<img src="../assets/media/taz.jpg" alt="image of Taz"/>
+				<div id="taz-overlap">
+					<div class="name">Taz<br><br><small>8/21/2002-8/31/2015</small></div>
+				</div>
+			</div>
+			<p>My dad wanted to get a Maltese dog, so he looked and found a family who had this dog and his siblings in 2002. He then decided to adopt this dog, and the dog's name was Taz. He got close to my brother. He was really sweet with all people; he liked to lick people a lot. He loved it when any person picks up and carries him. Taz was a cuddly dog. With other dogs, he, on the other hand, could be bothersome sometimes. He was bossy towards Tucker and Asia, and he sometimes bit their feet for some reason. He wanted a lot of attention and cuddling.</p>
+		</div>
+
+		<div class="pet-desc" id="tucker">
+			<div id="tucker-container">
+				<img src="../assets/media/tucker3.jpg" alt="image of Tucker"/>
+				<div id="tucker-overlap">
+					<div class="name">Tucker<br><br><small>9/21/1999-9/29/2013</small></div>
+				</div>
+			</div>
+			<p>This German Shorthair dog was named Tucker and adopted in the fall of 1999 when my dad wanted a hunting dog. Tucker was such a high spirited dog, and he was not aware of how fragile children are. Therefore, he was a dog that lived in a doghouse outside, not an indoor dog. He loved running and chasing small animals. Sometimes, my dad took him for hunting. The dog was outgoing with any dogs or people. When he became weaker and older, we allowed him to sleep with us in the house, and he loved our couches as bedding.</p>
+		</div>
+
+		<div class="parallax" id="bunnies">
+			<div class="header-background">
+				<div class="header" id="bunnies-header">Rabbits</div>
+			</div>
+		</div>
+
+		<div class="pet-desc" id="description1">
+			<p>In 2010 or 2011, my sister was longing for a rabbit, so she made a deal with my mom. She promised to do showing her rabbit once she got a rabbit. When my mom got a rabbit, named Roody, for my sister. My sister was thrilled and started participating in the 4-H club. Then, we got another bunny named Ginger. Eventually, we liked participating in several different shows a lot, so we decided to start breeding and buying more rabbits. We kept them in our garage, away from our dogs. Most of our rabbits were Holland Lop; their breed has long ears dangling. Roody and Ginger were Holland Lop rabbits. We also had a few French Lop rabbits; their breed is similar to Holland Lop but bigger. I had got a Dutch rabbit. She had a unique pattern that has black around her hip, eyes, and ears; the white part was around her shoulder. There's a definite line between the colors in her midsection. These patterns are commonly seen in Dutch rabbits. Some of our rabbits are Mini Rex; rabbits of this breed have a soft, short, thick coat. Their ears are stiff and up, unlike Holland lops with floppy ears. Later, we decided to sell all of them in 2016 after we realized that it was pretty hard to find someone willing to take care of them whenever we went on a vacation.</p>
+		</div>
+
+		<div class="parallax" id="hens">
+			<div class="header-background">
+				<div class="header" id="hens-header">Hens</div>
+			</div>
+		</div>
+
+		<div class="pet-desc" id="description2">
+			<p>At a theme park where my mom is working, there are many different animals including chickens. Boo, a Blue Laced Red Wyandotte, was the only one that was hatched at that time, and she would have been bullied by older hens since she was alone, easily to be targeted. Therefore, she was moved to a small store on the site to allow people to interact with her. My mom was taking care of her, and then she became bonded with the chick. Later, she decided to bring Boo home. My dad then built a coop for her in our backyard. A few months later, my dad wanted more chickens because of their delicious, fresh eggs, so we got the other two chicks. One of them was a Silver Laced Wyandotte, named Roz, and the other one, Celia was a Golden Laced Wyandotte. We had been feeding and watching her grow until 2019. There was a terrible incident that got Boo and Roz killed and injured. A few days after my mom brought Cooper into the house, and I foolishly took him outside with me when I went to the backyard to feed the chickens. Everything immediately went wrong. He got Boo and Roz, and Celia barely made out alive. However, we decided to sell her soon after to a farmer.</p>
+		</div>
+
+	</div>
+
+	<footer>Copyright &#169; 2020<br>Rachel Taylor  &#8226; <a id="footer" href="../index.html">Homepage</a></footer>
+
+</body>
+
+</html>

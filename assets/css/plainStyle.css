@@ -1,0 +1,194 @@
+body{
+	font-family: Arial; 
+	background-color: #e6e6e6;
+	color: #808080;
+	margin: 0em;
+}
+
+div{
+	background-color: white;
+	padding: 1em;
+	margin: 1em 15em 1em 15em;
+}
+
+
+h1{
+	text-align: center;
+	color: white;
+	background-color: #1a66ff;
+	padding: .5em;
+	margin: 0em;
+	border-bottom: 2px solid white;
+}
+
+h2{
+	color: #1a66ff;
+	margin: 0em;
+}
+
+h3{
+	color: #1a66ff;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	padding: 5em;
+	text-align: center;
+	font-size: 80%;
+	border-top: 2px solid white;
+}
+
+
+#navlist{
+	background-color: #1a66ff;
+    color: white;
+    width: 100%;
+    padding: .5em 0em;
+}
+
+#navlist a{
+    padding: .5em 1em;
+	color: lightgray;
+	text-decoration: none;
+}
+
+#navlist a:hover{
+	color: white;
+}
+
+a:link{
+		color: gray;
+	}
+	
+a:active{
+		color: darkgray;
+	}
+	
+a:visited{
+		color: #1a66ff;
+	}
+
+a:hover{
+		color: dodgerblue;
+		text-decoration: underline; 
+	}
+	
+a{
+		text-decoration: none;
+		}
+
+button{
+	background-color: #1a66ff;
+	padding: .5em;
+	border: none;
+	color: white;
+}
+
+/* ############################################
+   ############################################ */
+
+/* a class in randomStuff.html */
+
+.date{
+	font-style: italic;
+}
+
+/* ############################################
+   ############################################ */
+
+/* id's used in aboutMe.html */
+
+#address{
+	font-size: 80%;
+}
+
+#resume{
+	color: black;
+}
+
+/* ############################################
+   ############################################ */
+
+/* classes used in educationForDeaf.html */
+
+.flex-container{
+	background-color: #e6e6e6;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 1em;
+}
+
+.flex-container > div{
+	border-top: 5px solid #1a66ff;
+	min-width: 15em;
+	max-width: 15em;
+	margin: 1em;
+	text-align: center;
+	padding-bottom: 3em;
+	background-image: linear-gradient(white, #e6e6e6);
+}
+
+.flex-container > div > h2{
+	padding-bottom: .5em;
+}
+
+.education{
+	margin: 0em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/* ############################################
+   ############################################ */
+
+/* for tablet */
+@media only screen and (max-width: 1024px){
+
+	div{
+		margin: 1em 5em 1em 5em;
+	}
+
+	.flex-container > div{
+		min-width: 0%;
+		min-height: 0%;
+		width: auto;
+		height: auto;
+		margin: 1em;
+	}
+
+}
+
+/* for smartphone and tablet */
+@media only screen and (max-width: 850px){
+
+	div{
+		margin: 1em;
+	}
+
+	.flex-container{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.flex-container > div{
+		max-width: none;
+	}
+
+	.education{
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+
+}
+
+/* for smartphone */
+@media only screen and (max-width: 400px){
+
+	.education{
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	
+}

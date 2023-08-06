@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Rachel Taylor, ISTE-240 Section 02
+Date: 9/16/2021 -->
+<head>
+	<title>Menu & Forms</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/ex03Stylesheet.css">
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+	<nav>
+		<img src="assets/media/city_logo.png" alt="image of colorful buildings along with clouds and green trees">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Activities</a></li>
+			<li><a href="#">Food</a></li>
+			<li><a href="#">Rest</a></li>
+			<li><a href="#">People</a></li>
+			<li><a href="#">Feedback</a></li>
+		</ul>
+	</nav>
+
+	<h1><i>Please tell us about your visit</i></h1>
+	<hr/>
+
+	<form method="get">
+		<p>How many in your group? <input type="number" min="1" max="20" step="1" value="1" name="num_of_members"/></p>
+
+		<p>When did you visit? <input type="date" name="date_of_visit" required/></p>
+
+		<fieldset>
+			<legend>Favorite Place</legend>
+			
+			<label for="baseball_fields"><input type="radio" id="baseball_fields" name="fav_place" value="Baseball_Fields" required/>Baseball Fields</label><br/>
+			<label for="museum"><input type="radio" id="museum" name="fav_place" value="Museum"/>Museum</label><br/>
+			<label for="luigis_italian_resturant"><input type="radio" id="luigis_italian_resturant" name="fav_place" value="Luigis_Italian_Resturant"/>Luigis Italian Resturant</label><br/>
+			<label for="mom's_hotel"><input type="radio" id="mom's_hotel" name="fav_place" value="Mom's_Hotel"/>Mom's Hotel</label><br/>
+			<label for="the_youth_hostel"><input type="radio" id="the_youth_hostel" name="fav_place" value="The_Youth_Hostel"/>The Youth Hostel</label>
+		</fieldset>
+
+		<p>Overall rate your visit to our small town:</p>
+		<input type="range" min="1" max="10" step="1" value="5" name="rating" id="myRange" list="myData"/><br/>
+		<datalist id="myData">
+			<option value="1" label="1"></option>
+			<option value="2" label="2"></option>
+			<option value="3" label="3"></option>
+			<option value="4" label="4"></option>
+			<option value="5" label="5"></option>
+			<option value="6" label="6"></option>
+			<option value="7" label="7"></option>
+			<option value="8" label="8"></option>
+			<option value="9" label="9"></option>
+			<option value="10" label="10"></option>
+		</datalist><br/>
+
+		<input type="submit" value="Submit"/>
+
+		
+	</form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+#for my own error document
+ErrorDocument 404 "<h1>Nope, nothing to see here. Go back!</h1>"
+
+ShibRedirectToSSL 4333
+AuthType Shibboleth
+ShibRequireSession on
+require shib-attr ritEduAffiliation Student
+require shib-attr ritEduAffiliation Employee
+require shib-attr ritEduAffiliation Alumni

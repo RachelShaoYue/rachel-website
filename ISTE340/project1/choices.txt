@@ -1,0 +1,21 @@
+Dog
+    Wheaten Terrier
+        Irish Coat
+        English Coat
+    French Bulldog
+        Blue
+        Pied
+    Black Mouth Cur
+        White Patch
+        No White Patch
+
+Cat
+    Turkish Angora
+        White
+        Black
+    Russian Blue
+        Green eyes
+        Yellow eyes
+    Tortoiseshell
+        Short haired
+        Long haired

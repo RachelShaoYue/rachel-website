@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<title>Random Stuff</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/plainStyle.css"/>
+
+	<script src="assets/js/randomStuff.js" async></script>
+
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+	<h1>Random Stuff!</h1>
+
+	<nav id="navlist">
+		<a href="index.html">Return</a>
+	</nav>
+
+	<div>
+
+		<h2>Date</h2>
+
+		<p id="date">Error showing the date</p>
+		<p id="time">Error showing the time</p>
+		<button type="button" onClick="updateTime()">Update the time</button>
+
+	</div>
+
+	<div>
+
+		<h2>Text Input Fields</h2><br/>
+
+		<form>
+
+			<label>First name:</label><br/>
+			<input type="text" name="firstName"><br/><br/>
+
+			<label>Last name:</label><br/>
+			<input type="text" name="lastName"><br/><br/>
+
+			<button type="button" onClick="getNames()" id="button1">Enter</button>
+
+			<p id="greeting"></p>
+
+		</form>
+
+	</div>
+
+	<footer>Copyright &#169; 2020 Rachel Taylor</footer>
+
+</body>
+</html>

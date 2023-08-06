@@ -1,0 +1,145 @@
+body{
+    font-family: 'Arial', 'Helvetica', 'Verdana';
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0em;
+    padding: .5em 1em;
+}
+
+#title{
+    text-align: center;
+    background-color: #F76902;
+    color: white;
+    padding: 1em;
+    margin: 0 0 .5em;
+}
+
+#sidebar{
+    grid-area: sidebar;
+    background-color: lightgray;
+    color: white;
+}
+
+.semesters{
+    display: none;
+}
+
+.semesters > div{
+    display: flex;
+    flex-flow: column;
+}
+
+.semesters > div > a{
+    padding: .2em 1em;
+    background-color: black;
+}
+
+.semesters > div > a:hover{
+    background-color: #F76902;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown:hover .semesters{
+    display: block;
+}
+
+.dropdown:hover{
+    background-color: darkgray;
+}
+
+.year_sidebar{
+    padding: 1em 1.5em;
+}
+
+#content{
+    grid-area: main;
+    color: white;
+    display: grid;
+    grid-template-areas: 'studies' 'courses';
+}
+
+#major{
+    grid-area: major;
+    background-color: #F76902;
+    padding: 1em;
+}
+
+#minor{
+    grid-area: minor;
+    background-color: darkgray;
+    padding: 1em;
+}
+
+#gpa{
+    background-color: black;
+    padding: 1em;
+    grid-area: gpa;
+}
+
+#studies{
+    grid-area: studies;
+    display: grid;
+    grid-template-areas: 'major minor' 'gpa gpa';
+    grid-gap: 1em;
+    margin-bottom: 1em;
+}
+
+#courses{
+    grid-area: courses;
+    background-color: lightgray;
+}
+
+.year{
+    text-align: center;
+    font-size: 1.5em;
+    background-color: darkgray;
+    padding: .5em;
+}
+
+#container{
+    display: grid;
+    grid-template-areas: 'sidebar main main main main';
+    grid-gap: 1em;
+}
+
+.semester{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 1em;
+}
+
+.header_semester{
+    padding: 1em;
+    background-color: black;
+}
+
+.course{
+    background-color: #F76902;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    border: solid 2px white;
+}
+
+.course_name{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    gap: .5em;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 5em;
+    text-align: center;
+    font-size: 80%;
+    margin-top: 1em;
+}

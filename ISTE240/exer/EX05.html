@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Rachel Taylor, ISTE-240 Section 02
+	Date: 10/10/2021 -->
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript - Part 2</title>
+	<link rel="stylesheet" href="assets/css/EX05.css">
+	<script src="assets/js/EX05.js"></script>
+</head>
+<body>
+	<div>
+		<p class="exerTitle">JavaScript Exercise 5a</p>
+		<p id="text_to_move" style="position:relative; left:0;">I Move</p>
+		<button onclick="moveText();">Move the Text</button>
+	</div>
+	<hr>
+
+	<div>
+		<p class="exerTitle">JavaScript Exercise 5b</p>
+		<form id="regForm">
+			<input type="text" id="fname" placeholder="boo"><br>
+			<input type="text" id="lname" placeholder="Radley"><br>
+			<input type="checkbox" id="dog">I have a dog. (Check if you do)<br>
+			<input type="text" id="major" placeholder="major"><br>
+			<input type="button" onclick="howmany();" value="Count of inputs">
+		</form>
+	</div>
+	<hr>
+
+	<div id="colorfulDiv">
+		<p class="exerTitle">JavaScript Exercise 5c</p>
+		<select name="colors" id="colors">
+			<option value="yellow">Yellow</option>
+			<option value="orange">Orange</option>
+			<option value="red">Red</option>
+			<option value="purple">Purple</option>
+			<option value="blue">Blue</option>
+			<option value="green">Green</option>
+		</select><br>
+		<button onclick="colorchanger();">Color Changer</button>
+	</div>
+	<hr>
+
+	<div>
+		<p class="exerTitle">JavaScript Exercise 5d</p>
+		<p onmouseover="changePColor(this)" onmouseleave="this.style.color=''">This sentence will change to the selected color above when moused over.</p>
+	</div>
+	<hr>
+
+	<div>
+		<p class="exerTitle">JavaScript Exercise 5e</p>
+		<form>
+			<input type="text" id="firstoperand" placeholder="First Operand"/><br>
+			<input type="text" id="secondoperand" placeholder="Second Operand"/><br>
+			<input type="button" onclick="return divide();" value="Divide" />
+			<input type="button" onclick="return multiply();" value="Multiply" />
+		</form>
+		<p>The answer: </p>
+	</div>
+</body>
+</html>

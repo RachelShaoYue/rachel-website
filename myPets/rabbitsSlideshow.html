@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Slideshow Gallery</title>
+
+  <link rel="stylesheet" type="text/css" href="../assets/css/slideshow.css">
+
+  <script src="../assets/js/slideshow.js" async></script>
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+<h1>Slideshow Gallery</h1>
+<div id="navlist">
+    <a href="myPets.html">Home</a>
+    <a href="dogsSlideshow.html">Dogs</a>
+    <a href="catsSlideshow.html">Cats</a>
+    <a href="foreverMissedSlideshow.html">Forever Missed</a>
+    <a id="current" href="#">Rabbits</a>
+    <a href="hensSlideshow.html">Hens</a>
+</div>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+    <img src="../assets/media/babyBunnies.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+    <img src="../assets/media/bunny.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+    <img src="../assets/media/babybunny.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+    <img src="../assets/media/bunniesShoe.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/babyBunnies.jpg" style="width:100%" onclick="currentSlide(1)" alt="Five baby bunnies">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/bunny.jpg" style="width:100%" onclick="currentSlide(2)" alt="Roody">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/babybunny.jpg" style="width:100%" onclick="currentSlide(3)" alt="Two cuddling bunnies">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/bunniesShoe.jpg" style="width:100%" onclick="currentSlide(4)" alt="Baby bunnies and a stinky and comfy shoe">
+    </div> 
+
+  </div>
+</div>
+    
+<footer>Copyright &#169; 2020 Rachel Taylor</footer>
+
+</body>
+</html>

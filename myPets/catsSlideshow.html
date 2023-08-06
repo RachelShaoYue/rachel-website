@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Slideshow Gallery</title>
+
+  <link rel="stylesheet" type="text/css" href="../assets/css/slideshow.css">
+
+  <script src="../assets/js/slideshow.js" async></script>
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+<h1>Slideshow Gallery</h1>
+<div id="navlist">
+    <a href="myPets.html">Home</a>
+    <a href="dogsSlideshow.html">Dogs</a>
+    <a id="current"href="#">Cats</a>
+    <a href="foreverMissedSlideshow.html">Forever Missed</a>
+    <a href="rabbitsSlideshow.html">Rabbits</a>
+    <a href="hensSlideshow.html">Hens</a>
+</div>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="../assets/media/tibah2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="../assets/media/tibahRaven.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="../assets/media/winter2.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="../assets/media/raven1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="../assets/media/tibah1.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="../assets/media/winter1.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/tibah2.jpg" style="width:100%" onclick="currentSlide(1)" alt="white and black picture of Tibah">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/tibahRaven.jpg" style="width:100%" onclick="currentSlide(2)" alt="Tibah and Raven">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/winter2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Sleeping Winter">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/raven1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Calm Raven">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/tibah1.png" style="width:100%" onclick="currentSlide(5)" alt="Close up view of Tibah">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/winter1.jpg" style="width:100%" onclick="currentSlide(6)" alt="Winter just woke up">
+    </div>
+  </div>
+</div>
+    
+<footer>Copyright &#169; 2020 Rachel Taylor</footer>
+
+</body>
+</html>

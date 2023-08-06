@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Slideshow Gallery</title>
+
+  <link rel="stylesheet" type="text/css" href="../assets/css/slideshow.css">
+
+  <script src="../assets/js/slideshow.js" async></script>
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+<h1>Slideshow Gallery</h1>
+<div id="navlist">
+    <a href="myPets.html">Home</a>
+    <a href="dogsSlideshow.html">Dogs</a>
+    <a href="catsSlideshow.html">Cats</a>
+    <a id="current" href="#">Forever Missed</a>
+    <a href="rabbitsSlideshow.html">Rabbits</a>
+    <a href="hensSlideshow.html">Hens</a>
+</div>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 11</div>
+    <img src="../assets/media/asia2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 11</div>
+    <img src="../assets/media/finley1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 11</div>
+    <img src="../assets/media/taz1.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 11</div>
+    <img src="../assets/media/taz2.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">5 / 11</div>
+    <img src="../assets/media/asia3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 11</div>
+    <img src="../assets/media/finley2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 11</div>
+    <img src="../assets/media/tucker2.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">8 / 11</div>
+    <img src="../assets/media/asia1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9 / 11</div>
+    <img src="../assets/media/tucker.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">10 / 11</div>
+    <img src="../assets/media/tucker4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">11 / 11</div>
+    <img src="../assets/media/tazSiblings.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/asia2.jpg" style="width:100%" onclick="currentSlide(1)" alt="Panting Asia">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/finley1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Finley in a backpack">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/taz1.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Taz in a coat">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/taz2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Taz in a car">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/asia3.jpg" style="width:100%" onclick="currentSlide(5)" alt="Asia sniffing a toy's butt">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/finley2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Finley in arms">
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/tucker2.jpg" style="width:100%" onclick="currentSlide(7)" alt="Tucker on a comfy couch">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/asia1.jpg" style="width:100%" onclick="currentSlide(8)" alt="Asia at a beach in Minnesota">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/tucker.jpg" style="width:100%" onclick="currentSlide(9)" alt="Tucker with glasses">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/tucker4.jpg" style="width:100%" onclick="currentSlide(10)" alt="Tucker chilling outside">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/tazSiblings.jpg" style="width:100%" onclick="currentSlide(11)" alt="Taz and his siblings">
+    </div>
+
+  </div>
+</div>
+
+<footer>Copyright &#169; 2020 Rachel Taylor</footer>
+    
+</body>
+</html>

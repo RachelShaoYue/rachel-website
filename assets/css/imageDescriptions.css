@@ -1,0 +1,468 @@
+body, html{
+	font-family: Arial;
+	margin: 0em;
+	padding: 0em;
+	color: white;
+}
+
+small{
+	font-size: 20px;
+}
+
+p{
+	padding: 2em;
+	margin: auto;
+}
+
+h2{
+	text-align: center;
+	padding: 1em;
+	margin: 0em;
+}
+
+a{
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding: 15.98px 0em;
+	padding-right: 1em;
+	text-align: center;
+}
+
+a:hover{
+	font-weight: bold;
+}
+
+a:active{
+	font-weight: bold;
+}
+
+img{
+	height: 100%;
+	display: block;
+}
+
+div{
+	padding: 0em;
+	margin: 0em;
+}
+
+/* ######################################
+   ###################################### */
+
+/* the navigation */
+
+#whole-nav{
+	position: sticky;
+	top: 0;
+	background-color: #1a66ff;
+	z-index: 1;
+	border-bottom: 2px solid white;
+	height: 48.17px;
+}
+
+#navbar h2{
+	display: inline;
+	margin: 0em;
+	padding: 9.995px;
+	height: 100%;
+}
+
+#navbar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	align-content: center;
+}
+
+#desktop-navlist{
+	display: inline;
+	height: 100%;
+}
+
+#mobile-navlist{
+	display: none;
+}
+
+#icon{
+	display: none;
+    }
+
+/* footer */
+
+footer{
+	background-color: black;
+	text-align: center;
+	padding: 10em;
+	font-size: 80%;
+}
+
+#footer{
+	padding: 0em;
+	color: #1a66ff;
+}
+
+#footer:hover, #footer:active{
+	color: white;
+	font-weight: normal;
+}
+
+/* ######################################
+   ###################################### */
+
+/* a list of the pets and descriptions */
+
+#pets{
+	display: flex;
+	flex-direction: column;
+	padding: 0em;
+}
+.pet-desc{
+	height: 20em;
+	display: flex;
+}
+
+/* ###################################### */
+
+/* the parallax */
+
+.parallax{
+	height: 20em;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#dogs{
+	background-image: url("../media/patterns/dogs.jpg");
+}
+
+#cats{
+	background-image: url("../media/patterns/cats.jpg");
+}
+
+#foreverMissed{
+	background-image: url("../media/patterns/pets.jpg");
+}
+
+#bunnies{
+	background-image: url("../media/patterns/bunnies.jpg");
+}
+
+#hens{
+	background-image: url("../media/patterns/hens.jpeg");
+}
+
+.header-background{
+	position: relative;
+  	top: 0;
+  	left: 0;
+  	height: 100%;
+  	width: 100%;
+	background-image: linear-gradient(rgba(26,102,255,1), rgba(0, 0, 0,0));
+}
+
+.header{
+	position: absolute;
+	font-size: 50px;
+  	font-weight: bold;
+ 	text-align: center;
+ 	top: 50%;
+ 	left: 50%;
+ 	margin-top: -29px;
+}
+
+#dogs-header{
+	margin-left: -62.5px;
+}
+
+#cats-header{
+	margin-left: -54.19px;
+}
+
+#pets-header{
+	margin-left: -183.415px;
+}
+
+#bunnies-header{
+	margin-left: -98.625px;
+}
+
+#hens-header{
+	margin-left: -61.135px;
+}
+
+/* ###################################### */
+
+/* images and the descriptions */
+
+[id*="reverse"]{
+	flex-direction: row-reverse;
+}
+
+[id*="container"]{
+	position: relative;
+	height: 320px;
+}
+
+[id*="overlap"]{
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	height: 100%;
+  	width: 100%;
+  	opacity: 0;
+  	transition: .5s ease;
+}
+
+[id*="container"]:hover [id*="overlap"]{
+	opacity: 1;
+}
+
+.name{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  	font-size: 40px;
+  	transform: translate(-50%, -50%);
+ 	text-align: center;
+ 	line-height: 50%;
+}
+
+#cooper{
+	background-color: #FE2712;
+	border-top: 2px solid white;
+}
+
+#cooper-container{
+	width: 320px;
+}
+
+#cooper-overlap{
+  background-color: #01D8ED;
+}
+
+#fiona-reverse{
+	background-color: #FC600A;
+}
+
+#fiona-container{
+	width: 307.69px;
+}
+
+#fiona-overlap{
+  background-color: #039FF5;
+}
+
+#ripley{
+	background-color: #FB9902;
+	border-bottom: 2px solid white;
+}
+
+#ripley-container{
+	width: 320px;
+}
+
+#ripley-overlap{
+	background-color: #0466FD
+}
+
+#raven-reverse{
+	background-color: #FCCC1A;
+	border-top: 2px solid white;
+}
+
+#raven-container{
+	width: 355.05px;
+}
+
+#raven-overlap{
+	background-color: #0333E5;
+}
+
+#tibah{
+	background-color: #B2D732;
+}
+
+#tibah-container{
+	width: 390.45px;
+}
+
+#tibah-overlap{
+	background-color: #4D28CD;
+}
+
+#winter-reverse{
+	background-color: #66B032;
+	border-bottom: 2px solid white;
+}
+
+#winter-container{
+	width: 393.28px;
+}
+
+#winter-overlap{
+	background-color: #994FCD;
+}
+
+#asia{
+	background-color: #3399FF;
+	border-top: 2px solid white;
+}
+
+#asia-container{
+	width: 352.17px;
+}
+
+#asia-overlap{
+	background-color: #CC6600;
+}
+
+#gandalf-reverse{
+	background-color: #4169E1;
+}
+
+#gandalf-container{
+
+}
+
+#gandalf-overlap{
+	background-color: #BE961E;
+}
+
+#finley{
+	background-color: #4424D6;
+}
+
+#finley-container{
+	width: 344.17px;
+}
+
+#finley-overlap{
+	background-color: #BBDB29;
+}
+
+#taz-reverse{
+	background-color: #6600CC;
+}
+
+#taz-container{
+	width: 327.44px;
+}
+
+#taz-overlap{
+	background-color: #99FF33;
+}
+
+#tucker{
+	background-color: #CC00CC;
+	border-bottom: 2px solid white;
+}
+
+#tucker-container{
+	width: 338.94px;
+}
+
+#tucker-overlap{
+	background-color: #33FF33;
+}
+
+#description1{
+	background-color: #FF0066;
+}
+
+#description2{
+	background-color: #FF0000;
+}
+
+[id*="description"]{
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
+}
+
+/* ######################################
+   ###################################### */
+
+/* for tablet */
+@media only screen and (max-width: 1366px) and (min-height: 768px){
+
+	.parallax{
+		background-attachment: scroll;
+	}
+
+}
+
+/* for smartphone */
+@media only screen and (max-width: 850px){
+
+	a{
+		width: 100%;
+		margin: 0em;
+		padding: 1em 0em;
+	}
+
+	img{
+		width: 100%;
+		clear: both;
+	}
+
+	.pet-desc{
+		height: auto;
+		flex-direction: column;
+	}
+
+	[id*="container"]{
+		width: auto !important;
+		height: auto !important;
+	}
+
+	[id*="reverse"]{
+		flex-direction: column !important;
+	}
+
+	.parallax{
+		background-attachment: scroll;
+	}
+
+	#whole-nav{
+		height: 100%;
+	}
+
+	#navbar h2{
+		position: relative;
+	}
+
+	#mobile-navlist{
+		width: 100%;
+		position: relative;
+		display: none;
+		flex-direction: column;
+		text-align: center;
+		background-color: #1a66ff;
+		border-top: 2px solid white;
+	}
+
+	#desktop-navlist{
+		display: none;
+	}
+
+	#icon{
+		display: flex;
+		background-color: #1a66ff;
+	    flex-direction: column;
+	    justify-content: space-between;
+	    height: 28.17px;
+	    padding: 10px;
+	    z-index: 1;
+	    }
+	    
+	#top-bar, #middle-bar, #bottom-bar{
+	    width: 28.17px;
+	    height: 5px;
+	    background-color: white;
+	    }
+
+}
+

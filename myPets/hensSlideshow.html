@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Slideshow Gallery</title>
+
+  <link rel="stylesheet" type="text/css" href="../assets/css/slideshow.css">
+
+  <script src="../assets/js/slideshow.js" async></script>
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+<h1>Slideshow Gallery</h1>
+<div id="navlist">
+    <a href="myPets.html">Home</a>
+    <a href="dogsSlideshow.html">Dogs</a>
+    <a href="catsSlideshow.html">Cats</a>
+    <a href="foreverMissedSlideshow.html">Forever Missed</a>
+    <a href="rabbitsSlideshow.html">Rabbits</a>
+    <a  id="current" href="#">Hens</a>
+</div>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+    <img src="../assets/media/babyboo.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+    <img src="../assets/media/celiaRoz.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+    <img src="../assets/media/boo.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+    <img src="../assets/media/chicks.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <img src="../assets/media/chicksCeliaRoz.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/babyboo.jpg" style="width:100%" onclick="currentSlide(1)" alt="Boo perching on an arm">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/celiaRoz.jpg" style="width:100%" onclick="currentSlide(2)" alt="Celia and Roz">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/boo.jpg" style="width:100%" onclick="currentSlide(3)" alt="Boo on grass">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/chicks.jpg" style="width:100%" onclick="currentSlide(4)" alt="Chicks Celia and Roz">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../assets/media/ratio1/chicksCeliaRoz.jpg" style="width:100%" onclick="currentSlide(5)" alt="Celia and Roz met Boo for the first time">
+    </div>    
+
+  </div>
+
+</div>
+
+<footer>Copyright &#169; 2020 Rachel Taylor</footer>
+    
+</body>
+</html>

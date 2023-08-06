@@ -1,0 +1,166 @@
+:root {
+  /* Color Schema */
+  --white: #ffffff;
+  --tealBlue: #437c90;
+  --darkSlateGray: #255957;
+
+  /* Message Colors */
+  --infoColor: #345995;
+  --successColor: #6ab547;
+  --failColor: #ff0000;
+}
+
+body {
+  font-family: "Arial", "Helvetica";
+  font-size: 16px;
+  margin: 0;
+  color: var(--tealBlue);
+  background-color: var(--darkSlateGray);
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0 0 0.5em 0;
+}
+
+img {
+  width: 100%;
+  border: solid white 2px;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin: 0 0 0.5em 0;
+}
+
+select, input {
+  margin: 0 0 1em;
+  padding: 0.5em;
+  background-color: var(--white);
+  border: solid var(--tealBlue) 2px;
+  color: var(--tealBlue);
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+select:active {
+  background-color: var(--tealBlue);
+  color: var(--white);
+}
+
+button {
+  margin: 0 0 2em;
+  padding: 0.5em;
+  color: var(--white);
+  background-color: var(--tealBlue);
+  border: none;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: var(--darkSlateGray);
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  color: var(--tealBlue);
+}
+
+a:hover {
+  color:var(--darkSlateGray);
+}
+
+ul {
+  padding: 0;
+  list-style-position: inside;
+  text-align: center;
+  list-style-type: none;
+}
+
+#browserList {
+  margin: 0;
+  text-align: left;
+  list-style-type: disc;
+}
+
+#legacyDiv p {
+  margin-top: 0;
+}
+
+li {
+  padding-bottom: 1em;
+}
+
+#container {
+  display: grid;
+  grid-template-areas: "form result history";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 1em;
+}
+
+#container, #legacyDiv {
+  margin: 2em 10em;
+}
+
+#formDiv,
+#historyDiv,
+#legacyDiv {
+  padding: 1em;
+  background-color: var(--white);
+}
+
+#legacyDiv {
+  padding-bottom: 0;
+}
+
+#formDiv {
+  grid-area: form;
+  overflow: hidden;
+}
+
+#resultDiv {
+  grid-area: result;
+  background-color: var(--darkSlateGray);
+}
+
+#historyDiv {
+  grid-area: history;
+}
+
+#resultDiv p {
+  background-color: var(--white);
+  padding: 1em;
+  margin: 0 0 1em 0;
+}
+
+/* Media Queries #####################################*/
+
+@media only screen and (max-width: 1100px) {
+  #container {
+    display: grid;
+    grid-template-areas:
+      "form result"
+      "history history";
+    grid-template-columns: 1fr 2fr;
+  }
+
+  #container, #legacyDiv {
+    margin: 2em 5em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #container, #legacyDiv {
+    margin: 2em;
+  }
+}

@@ -1,0 +1,193 @@
+/* stylesheet for my first individual project */
+/* color palette - French Raspberry: C42847, Rusty Ref: DE3C4B, Oxford Blue: 000022, Fulvous: E28413, Snow: FBF5F3; */
+
+body{
+	font-family: "Arial";
+	margin: 0;
+	padding: 0;
+	background-color: lightgray;
+	color: #000022;
+	line-height: 1.6;
+}
+
+header{
+	text-align: center;
+	padding: 3em;
+	font-size: 50px;
+	font-weight: bold;
+	color: #FBF5F3;
+	background-position: center;
+	background-size: cover;
+}
+
+/* the parent list of the navigation tabs */
+nav ul{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+nav > ul{
+	border-top: 2px solid white;
+}
+
+/* elements of the parent list of navigation tabs */
+nav ul li{
+	list-style: none;
+	color: #FBF5F3;
+}
+
+/* all the navigation tabs */
+nav a, nav div{
+	display: block;
+	text-decoration: none;
+	background-color: #C42847;
+	color: #FBF5F3;
+	padding: 1em;
+	transition: background-color 0.5s;
+}
+
+/* the child list of the parent list */
+nav ul li ul{
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	width: 25%;
+}
+
+/* the individual elements of the child list only */
+nav > ul > li > ul > li > a{
+	background-color: #E28413;
+	transition: background-color 0.5s;
+}
+
+/* displays the child list when the user hovers over the element of the parent list */
+nav ul li:hover ul{
+	display: flex;
+}
+
+/* changes the background color of the element with div tags when the user hovers over the element of the parent list */
+nav ul li:hover div{
+	background-color: #DE3C4B;
+}
+
+/* changes the background color of the element with a tags when the user hovers over the element of the parent list */
+nav ul li a:hover{
+	background-color: #DE3C4B;
+}
+
+/* displays where the user currently is on */
+nav > ul > li > .current, li > ul > li > .current{
+	font-weight: bold;
+	color: lightgray;
+}
+
+body > div{
+	margin: 1em 15em;
+	background-color: #FBF5F3;
+	color: gray;
+	padding: .5em 1em;
+	overflow-y: auto;
+}
+
+h2{
+	color: #C42847;
+}
+
+figure{
+	display: inline-block;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	max-width: 300px;
+}
+
+figcaption > a{
+	font-style: italic;
+	color: #C42847;
+	text-decoration: none;
+}
+
+/* move the figures around so that the text wraps around them */
+.img_on_right{
+	padding-left: 1em;
+	float: right;
+}
+
+.img_on_left{
+	padding-right: 1em;
+	float: left;
+}
+
+figure > img{
+	width: 100%;
+}
+
+/* a grid-like view for a group of images */
+.gallery img{
+	height: 200px;
+}
+
+footer{
+	padding: 2em;
+	background-color: #000022;
+	color: #FBF5F3;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+footer ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+footer a{
+	text-decoration: none;
+	color: gray;
+}
+
+footer a:hover{
+	color: #C42847;
+}
+
+/* make the link to the index.html bigger and heavier in the footer section */
+.web_info a{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+@media only screen and (max-width: 1240px){
+	body > div{
+		margin: 1em 5em;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	nav ul{
+		grid-template-columns: none;
+	}
+
+	nav ul li ul{
+		position: inherit;
+		width: 100%;
+	}
+
+	body > div{
+		margin: 1em;
+	}
+
+	header{
+		padding: 2em 1em;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	header{
+		padding: 1em 0;
+		font-size: 30px;
+	}
+}

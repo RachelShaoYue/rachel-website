@@ -1,0 +1,82 @@
+/*** Stylesheet for the second exercise ***/
+
+body{
+	font-size: 120px;
+	color: #7FA508;
+	background-image:  url(../media/side.jpg);
+	background-repeat: repeat-y;
+}
+
+/*** p tags with flower names ***/
+.flower{
+	font-size: 30px;
+	font-weight: bold;
+	color:  #CC99FF;
+	position: relative;
+	bottom: 50px;
+	z-index: 1;
+    text-align:center;
+}
+
+/*** the groupings on the right side ***/
+.content{
+	display: grid;
+	grid-template-columns: 1.8em 1.8em;
+	grid-template-rows: 1.8em 1.8em;
+	grid-gap: .3em;
+	position: relative;
+	left: 150px;
+
+}
+
+/*** individual grouping ***/
+.content div{
+	background-color: #3B5710;
+	border-radius: 20px;
+	transition: background-color 1s;
+
+}
+
+/*** when a grouping is being hovered over, the curser changes to a hand
+ * and the background color slowly fades into purple ***/
+.content div:hover{
+	background-color: #712E6D;
+	cursor: -webkit-grab; cursor: grab;
+
+}
+
+p{
+	padding: 0;
+	margin: 0;
+}
+
+.content p{
+	position: relative;
+}
+
+/*** any p that isn't in the flower class ***/
+.content p:not(.flower){
+	text-shadow: 5px 5px #FFFF00;
+	position: relative;
+	top: 30px;
+	left: 20px;
+}
+
+/*** arranges the groupings into one column ***/
+@media screen and (max-width: 600px){
+    .content{
+    	grid-template-columns: 1.8em;
+    	grid-auto-rows: 1.8em;
+    }
+}
+
+/*** remove the sidebar from the screen ***/
+@media screen and (max-width: 500px){
+	body{
+		background: none;
+	}
+
+	.content{
+		left: 0;
+	}
+}
